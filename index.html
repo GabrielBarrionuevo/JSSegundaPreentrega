@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <!-- Menu principal -->
+        <h1>NombreLocal</h1>
+        <div id="contenedorCarrito">
+            <a id="linkCarrito" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                <img src="" alt="Carrito de compras">
+            </a>
+        </div>
+    </header>
+
+    <div id="principal"> 
+
+        <!-- Aside -->
+        <aside id="aside">
+
+            <section>
+                <article>
+                    <form id="form-nombreSaldo">
+                        <fieldset class="filtros">
+                        <legend>Agregue nombre y saldo</legend>
+                            <!-- Agregar Nombre -->
+                        <input id="agregaNombre" placeholder="Agregue su nombre">
+
+                        <!-- Agregar crédito -->
+                        <input id="agregaSaldo" placeholder="Agregue crédito disponible">
+                        
+                        <button class="btn-accion btn-nombreSaldo" type="submit" id="btn-nombreSaldo">Aplicar</button>
+                    </form>
+                </article>
+            </section>
+
+            <!-- BUSCAR POR NOMBRE -->
+            <section>
+                <article>
+                    <form id="form-buscarXNombre">
+                        <fieldset class="filtros">
+                        <legend>Buscar por nombre</legend>
+                        <input id="buscaXNombre" placeholder="Buscar por nombre">
+                        <div id="filtradoPorNombre"></div>
+                        <button class="btn-accion btn-filtroNombre" type="submit" id="btn-filtrarNombre">Aplicar</button>
+                    </form>
+                </article>
+            </section>
+            <!-- FILTRAR POR PRECIO -->
+            <section>
+                <article>
+                    <form id="form-buscarXRango">
+                        <fieldset class="filtros">
+                            <legend>Ingrese rando de precios</legend>
+                            <!-- Agregar barra doble para máximo y mínimo -->
+                            <!-- <div class="slidecontainer">
+                                <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                            </div> -->
+                            <input id="baseDePrecio" placeholder="Precio mínimo">
+                            <input id="topeDeprecio" placeholder="Precio máximo">
+                            <button class="btn-accion btn-filtrarXRango" type="submit" id="btn-filtrarXRango">Aplicar</button>
+                        </fieldset>
+                    </form>
+                </article>
+            </section>
+
+            <!-- FILTRAR POR CATEGORIAS -->
+            <section>
+                <article>
+                    <form id="form-checkbox">
+                        <fieldset class="filtros">
+                            <legend>Categorias</legend>
+                            <label for="Categoria01">
+                                <input type="checkbox" id="checkbox1">Normal
+                            </label>
+                            <label for="Categoria02">
+                                <input type="checkbox" id="checkbox2">Premium
+                            </label>
+                            <label for="Categoria03">
+                                <input type="checkbox" id="checkbox3">Deluxe
+                            </label>
+                            <button class="btn-accion btn-filtro" type="submit" id="btn-filtrar">Aplicar</button>
+                        </fieldset>
+                    </form>
+                </article>
+            </section>
+
+            <section>
+                <h2>Carrito</h2>
+                <!-- Elementos del carrito -->
+                <ul id="carrito" class="list-group"></ul>
+                <hr />
+                <!-- Precio total -->
+                <p class="text-right">Total: <span id="total"></span>$</p>
+                <button id="boton-vaciar" class="btn btn-danger">Vaciar</button>
+            </section>
+        </aside>
+
+        <main id="main">
+            <div class="contenedorSaludo"></div>
+            <div class="contenedorDinero"></div>
+            <div class="contenedorBuscarXNombre"></div>
+            <div class="contenedorBuscarPrecioXRango"></div>
+            <h2>Papitas</h2>
+            <section class="contenedor">
+                <!-- <article class="contProducto">
+                    <img src="" alt="">
+                    <div class="Contenido">
+                        <p>Tipo de producto</p>
+                        <p>Precio</p>
+                    </div>
+
+                    <div class="">
+                        <button class="btn-comprar">Agregar al carrito</button>
+                    </div>
+                </article> -->
+            </section>
+            <section id="contenedorCarrito">
+
+
+
+
+
+
+            </section>
+        </main>
+
+        <footer>
+            <div id="contSocial">
+                <h3>Redes Sociales</h3>
+                <!-- Icono redes -->
+                <div>
+            </div>
+            <p>Hecho por...</p>
+        </footer>
+    </div>
+
+    <script src="javaScript.js"></script>
+</body>
+</html>
+
+
+
